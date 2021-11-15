@@ -45,7 +45,7 @@ four directories
   ```
   make -j KOKKOS_DEVICES=Cuda 
   ```
-  to choose OpenMP or Cuda. 
+  to choose OpenMP or Cuda. \
   run command: 
   ```
   ./run.host
