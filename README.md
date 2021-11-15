@@ -24,7 +24,7 @@ four directories
   ./run
   ```
   
-# 3. MPI solver only available using 12 cores 
+# 3. MPI solver
   compile command: 
   ```
   mpiicxx poisson.cpp main.cpp -o run 
@@ -35,6 +35,7 @@ four directories
   ```
   
 # 4. Kokkos solver 
+  Make sure the system supports C++17.\
   after config the kokkos on ThetaGPU, 
   make in the local directory: 
   ```
