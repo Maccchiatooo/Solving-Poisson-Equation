@@ -3,7 +3,6 @@
 cd
 mkdir kokkos
 cd kokkos
-
 git clone https://github.com/kokkos/kokkos.git
 git clone https://github.com/kokkos/kokkos-tutorials.git
 ```
@@ -16,12 +15,9 @@ qsub -n 1 -t60 -A Comp_Perf_Workshop -I -q training
 ```
 cd
 cd kokkos
-
 mkdir build
 cd build
-
 module load cmake
-
 cmake ../kokkos \
     -D CMAKE_CXX_FLAGS=-fopenmp \
     -D CMAKE_BUILD_TYPE=Release \
@@ -32,7 +28,6 @@ cmake ../kokkos \
     -D Kokkos_ENABLE_OPENMP=On
     
 make -j install
-
 export CMAKE_PREFIX_PATH="${PWD}"/install:"${CMAKE_PREFIX_PATH}"
 ```
 # Example build of a kokkos exercise on the ThetaGPU node
@@ -40,7 +35,6 @@ export CMAKE_PREFIX_PATH="${PWD}"/install:"${CMAKE_PREFIX_PATH}"
 cd
 cd kokkos
 cd kokkos-tutorials/Exercises/04/Solution
-
 mkdir build
 cd build
 cmake ..
