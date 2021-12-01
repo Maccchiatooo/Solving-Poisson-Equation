@@ -25,7 +25,8 @@ cmake ../kokkos \
     -D Kokkos_ENABLE_CUDA=On \
     -D Kokkos_ENABLE_CUDA_LAMBDA=On \
     -D Kokkos_ENABLE_SERIAL=On \
-    -D Kokkos_ENABLE_OPENMP=On
+    -D Kokkos_ENABLE_OPENMP=On \
+    -D CMAKE_CXX_STANDARD=17
     
 make -j install
 export CMAKE_PREFIX_PATH="${PWD}"/install:"${CMAKE_PREFIX_PATH}"
