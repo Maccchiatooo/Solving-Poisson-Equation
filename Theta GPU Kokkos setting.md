@@ -9,7 +9,7 @@ git clone https://github.com/kokkos/kokkos-tutorials.git
 # Log into a ThetaGPU node
 ```
 ssh thetagpusn1
-qsub -n 1 -t60 -A Comp_Perf_Workshop -I -q training
+qsub -I --attrs pubnet=true -A IMEXLBM -n 1 -q single-gpu -t 60
 ```
 # Building Kokkos on the ThetaGPU node
 ```
