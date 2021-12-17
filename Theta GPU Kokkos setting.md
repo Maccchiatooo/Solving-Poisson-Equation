@@ -30,6 +30,9 @@ cmake ../kokkos \
     
 make -j install
 export CMAKE_PREFIX_PATH="${PWD}"/install:"${CMAKE_PREFIX_PATH}"
+export OMPI_CXX=~/Kokkos/kokkos/bin/nvcc_wrapper
+export OMP_PLACES=threads
+export OMP_PROC_BIND=spread
 ```
 # Example build of a kokkos exercise on the ThetaGPU node
 ```
