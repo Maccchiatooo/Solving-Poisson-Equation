@@ -70,7 +70,7 @@ four directories
   ```
   run command: 
   ```
-  mpiexec -np n LBM.exe --kokkos_num_devices=n
+  mpirun -np n LBM.exe --kokkos_num_devices=n
   ```
   
 
