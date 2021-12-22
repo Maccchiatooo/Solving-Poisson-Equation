@@ -68,7 +68,7 @@ five directories
   ```
   make -j
   ```
-  run command: 
+  run command: if you want to use n cpu + n gpu
   ```
   mpirun -np n LBM.exe --kokkos_num_devices=n
   ```
