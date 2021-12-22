@@ -54,7 +54,7 @@ five directories
   ```
   ./run.cuda
    ```
-# 4. MPI+Kokkos solver 
+# 5. MPI+Kokkos solver 
   ```
   export OMPI_CXX=~/Kokkos/kokkos/bin/nvcc_wrapper
   ```
