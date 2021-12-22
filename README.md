@@ -54,5 +54,23 @@ four directories
   ```
   ./run.cuda
    ```
-
+# 4. MPI+Kokkos solver 
+  ```
+  export OMPI_CXX=~/Kokkos/kokkos/bin/nvcc_wrapper
+  ```
+  ```
+  export OMP_PROC_BIND=spread
+  ```
+  ```
+  export OMP_PLACES=threads
+  ```
+  make in the local directory: 
+  ```
+  make -j
+  ```
+  run command: 
+  ```
+  mpiexec -np n LBM.exe --kokkos_num_devices=n
+  ```
+  
 
