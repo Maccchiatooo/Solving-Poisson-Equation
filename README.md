@@ -2,7 +2,7 @@
 
 2-D Poisson equation problem is solved by central finite difference
 
-four directories
+five directories
 
 # 1. Serial solver
   compile command:
