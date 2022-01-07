@@ -14,15 +14,19 @@ int main(int argc, char *argv[])
 
         p2.init();
         p2.setup_subdomain();
-
+        // p2.pack();
         start = MPI_Wtime();
+        p2.error();
+
         for (int i = 1; i <= 10000; i++)
         {
 
-            MPI_Barrier(MPI_COMM_WORLD);
+            // MPI_Barrier(MPI_COMM_WORLD);
             if (i % 1000 == 0)
                 p2.error();
+            p2.pack();
             p2.exchange();
+            p2.unpack();
             p2.update();
             end = MPI_Wtime();
 
