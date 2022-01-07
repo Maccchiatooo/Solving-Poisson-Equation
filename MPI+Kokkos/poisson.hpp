@@ -80,6 +80,7 @@ struct Poisson2d
     void setup_subdomain();
     void pack();
     void exchange();
+    void unpack();
     void update();
     // void output();
     void error();
