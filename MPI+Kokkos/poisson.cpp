@@ -32,10 +32,10 @@ void Poisson2d::init()
     y_hi = ly * (comm.py + 1);
 
     // printf("Me:%i x_lo: %i x_hi: %i y_lo: %i y_hi: %i\n", comm.me, x_lo, x_hi, y_lo, y_hi);
-    m_cellValue = Kokkos::View<double **>("m_cellValue", lx + 2, ly + 2);
-    m_cellValueNew = Kokkos::View<double **, Kokkos::CudaSpace>("m_cellValueNew", lx + 2, ly + 2);
-    m_fb = Kokkos::View<double **, Kokkos::CudaSpace>("m_fb", lx + 2, ly + 2);
-    m_exact = Kokkos::View<double **, Kokkos::CudaSpace>("m_exact", lx + 2, ly + 2);
+    m_cellValue = Kokkos::View<double **, Kokkos::CudaUVMSpace>("m_cellValue", lx + 2, ly + 2);
+    m_cellValueNew = Kokkos::View<double **, Kokkos::CudaUVMSpace>("m_cellValueNew", lx + 2, ly + 2);
+    m_fb = Kokkos::View<double **, Kokkos::CudaUVMSpace>("m_fb", lx + 2, ly + 2);
+    m_exact = Kokkos::View<double **, Kokkos::CudaUVMSpace>("m_exact", lx + 2, ly + 2);
 
     int X = m_cellValue.extent(0);
     int Y = m_cellValue.extent(1);
