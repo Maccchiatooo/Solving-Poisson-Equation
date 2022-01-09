@@ -27,7 +27,7 @@ five directories
 # 3. MPI solver
   compile command: 
   ```
-  mpiicxx poisson.cpp main.cpp -o run 
+  mpicxx poisson.cpp main.cpp -o run 
   ```
   run command: 
   ```
