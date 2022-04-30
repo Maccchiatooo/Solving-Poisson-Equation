@@ -103,7 +103,7 @@ int main(int argc, char *argv[])
                                              double u_xe = -pi * pi * (pow(phi_x, 2) + pow(phi_y, 2)) * sycl::sin(pi * phi_x * phi_y);
                                              int id = id0 + id1 * (local_len[0] + 2);
 
-                                             if (g_x == 0 || g_x == global_len[0]-1 || g_x == 0 ||  g_y ==global_len[1]-1)
+                                             if (g_x == 0 || g_x == global_len[0]-1 || g_y == 0 ||  g_y ==global_len[1]-1)
                                              {
                                                  m_fb[id] = u_e;
                                                  m_cellValue[id] = u_e;
@@ -216,7 +216,7 @@ int main(int argc, char *argv[])
                                           double u_xe = -pi * pi * (pow(phi_x, 2) + pow(phi_y, 2)) * sycl::sin(pi * phi_x * phi_y);
                                           int id = id0 + id1 * (local_len[0] + 2);
 
-     if (g_x == 0 || g_x == global_len[0]-1 || g_x == 0 ||  g_y ==global_len[1]-1)
+     if (g_x == 0 || g_x == global_len[0]-1 || g_y == 0 ||  g_y ==global_len[1]-1)
      {
          m_cellValueNew[id] = u_e;
      }else{
