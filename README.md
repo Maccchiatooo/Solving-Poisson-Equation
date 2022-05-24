@@ -56,7 +56,7 @@ five directories
    ```
 # 5. MPI+Kokkos solver 
   ```
-  export OMPI_CXX=~/Kokkos/kokkos/bin/nvcc_wrapper
+  export OMPI_CXX=/grand/IMEXLBM/czhao/Kokkos/kokkos/bin/nvcc_wrapper
   ```
   ```
   export OMP_PROC_BIND=spread
