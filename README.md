@@ -70,7 +70,7 @@ five directories
   ```
   run command: if you want to use n cpu + n gpu
   ```
-mpirun -hostfile $COBALT_NODEFILE -n 16 -npernode 8 LBM.exe
+mpirun -hostfile $COBALT_NODEFILE -n num -npernode 8 LBM.exe
   ```
   
 
