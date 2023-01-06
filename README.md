@@ -68,6 +68,8 @@ five directories
   ```
   make -j
   
+  module load PrgEnv-gnu/8.3.3 
+  cudatoolkit-standalone/11.6.2
   make KOKKOS_CXX_STANDARD=c++17
   ```
   run command: if you want to use n cpu + n gpu
