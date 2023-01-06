@@ -67,6 +67,8 @@ five directories
   make in the local directory: 
   ```
   make -j
+  
+  make KOKKOS_CXX_STANDARD=c++17
   ```
   run command: if you want to use n cpu + n gpu
   ```
