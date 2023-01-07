@@ -1,7 +1,6 @@
 # Solving-Poisson-Equation
 
 2-D Poisson equation problem is solved by central finite difference
-qsub -I -n 4 -t 60 -q default --attrs filesystems=home,grand -A IMEXLBM
 five directories
 
 # 1. Serial solver
@@ -55,6 +54,8 @@ five directories
   ./run.cuda
    ```
 # 5. MPI+Kokkos solver 
+
+qsub -I -n 4 -t 60 -q default --attrs filesystems=home,grand -A IMEXLBM
   ```
   export OMPI_CXX=/grand/IMEXLBM/czhao/Kokkos/kokkos/bin/nvcc_wrapper
   ```
